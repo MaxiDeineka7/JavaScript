@@ -1,0 +1,31 @@
+<html>
+    <script type="text/javascript">
+var a = 4;
+var b = 10;
+
+var calcu = {};
+
+calcu.sum = function (a,y)
+{
+     return(a+y);
+}
+calcu.substract = function (a,y)
+{
+     return(a+y);
+}
+calcu.multiply = function (a,y)
+{
+     return(a+y);
+}
+calcu.divide = function (a,y)
+{
+     return(a+y);
+}
+
+function obj(x,y){
+    var finish = calcu.sum(x,calcu.substract(((calcu.multiply(x,5))),(calcu.divide(y,2))));
+    return finish;
+}
+alert(obj(a,b));
+    </script>
+</html>

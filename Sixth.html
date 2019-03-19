@@ -1,0 +1,30 @@
+<html>
+    <script type="text/javascript">
+var str = "HelLo MY my My nAmE iS MAX Max";
+var arr = ["my","is"];
+function Counter(str,arr){
+    var objectsArray = [];
+    var strLC = str.toLowerCase();
+    var strLC_words = strLC.split(" ");
+    for(i=0;i < arr.length;i++){        
+        var word = arr[i];
+        var count = 0;
+        for(j=0;j<strLC_words.length;j++){          
+            if(arr[i] === strLC_words[j]){
+                count = count+1;
+            }
+        }
+        var object = {name:word,count:count };
+        objectsArray.push(object);
+    }
+    return objectsArray; 
+   
+}
+        var object2 = {name: " ", count:0};
+            
+        object2 = Counter(str,arr);
+        for(var i = 0;i < object2.length;i++){
+            alert(object2[i].name + object2[i].count);
+        }       
+    </script>
+</html>

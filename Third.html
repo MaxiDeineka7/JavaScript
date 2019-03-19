@@ -1,0 +1,22 @@
+<html>
+    <script type="text/javascript">
+var Arr = [32,2,5,14,28,11,15];
+var minVal = 2;
+var maxVal = 32;
+
+function filterArray (Arr,minVal,maxVal)
+{
+    var Arr2 = [];
+        for(i=0; i< Arr.length;i++)
+        {
+            if (Arr[i] > minVal && Arr[i] < maxVal)
+            {               
+                Arr2.push(Arr[i]);
+            }          
+        }
+    return Arr2; 
+}
+    alert(Arr);
+    alert(filterArray(Arr,minVal,maxVal));
+    </script>
+</html>

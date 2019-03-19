@@ -1,0 +1,34 @@
+<html>
+    <script type="text/javascript">
+var arr = [1,2,3,4,5,6,7,8,9,10]
+
+function Counter(arr)
+{
+    var objectArray = [];
+    for(i=0;i<arr.length;i++)
+    {   
+        var object = {number : arr[i],
+            oddoreven : function(){
+            if ((arr[i]%2)==0)
+            {
+                return  false;
+            } 
+            else 
+            { 
+                return  true;
+            }
+        }
+    }
+        objectArray.push(object);
+    }
+    return(objectArray);
+}
+
+var objectArray = Counter(arr);
+
+for(i=0;i<objectArray.length;i++)
+{
+    alert(objectArray[i].number+ " "+objectArray[i].oddoreven());
+}
+    </script>
+</html>
